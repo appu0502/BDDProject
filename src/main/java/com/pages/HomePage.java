@@ -57,7 +57,7 @@ public class HomePage extends TestBase {
 	@SuppressWarnings("deprecation")
 	public void navigateToHomePage() {
 		driver.get(prop.getProperty("url"));
-		Assert.assertTrue(driver.getTitle()=="ValuesExcersize");
+		Assert.assertTrue("ValuesExcersize", driver.getTitle()=="ValuesExcersize");
 	}
 	
 	@SuppressWarnings("deprecation")
@@ -86,7 +86,8 @@ public class HomePage extends TestBase {
 				Integer.parseInt(txtVal4.getAttribute("value").replace("$", "")) +
 				Integer.parseInt(txtVal5.getAttribute("value").replace("$", ""));
 		int displayedTotal =  Integer.parseInt(txtTotalBal.getAttribute("value").replace("$", ""));
-		Assert.assertEquals(actualTotal, displayedTotal);
+		Assert.assertTrue("Total displayed is equal to calculated value?",actualTotal==displayedTotal);
+		
 	}
 	
 	@SuppressWarnings("deprecation")
