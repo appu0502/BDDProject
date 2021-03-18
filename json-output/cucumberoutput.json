@@ -1,0 +1,96 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "ScenarioOne",
+        "description": "",
+        "id": "test-hooks-in-bdd;scenarioone",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "scenario one stepOne",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "scenario one stepTwo",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "ScenarioTwo",
+        "description": "",
+        "id": "test-hooks-in-bdd;scenariotwo",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "scenario Two stepOne",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "scenario Two stepTwo",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "ScenarioThree",
+        "description": "",
+        "id": "test-hooks-in-bdd;scenariothree",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "scenario Three stepOne",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "scenario Three stepTwo",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Test Hooks in BDD",
+    "description": "",
+    "id": "test-hooks-in-bdd",
+    "keyword": "Feature",
+    "uri": "F:/Java/JavaWorkSpace/FreeCRMCucumberBDDFramework/src/main/java/features/Hooks.feature"
+  }
+]
