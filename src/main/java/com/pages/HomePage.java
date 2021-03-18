@@ -93,12 +93,13 @@ public class HomePage extends TestBase {
 	public void validateValueFormat() {
 		String regExp = "(?:\\$)[1-9]*(?:\\,)[1-9]*(?:\\.)[0-9]*";
 
-		Assert.assertTrue(Pattern.matches(regExp, txtVal1.getAttribute("value")));
-		Assert.assertTrue(Pattern.matches(regExp, txtVal2.getAttribute("value")));
-		Assert.assertTrue(Pattern.matches(regExp, txtVal3.getAttribute("value")));
-		Assert.assertTrue(Pattern.matches(regExp, txtVal4.getAttribute("value")));
-		Assert.assertTrue(Pattern.matches(regExp, txtVal5.getAttribute("value")));
-		Assert.assertTrue(Pattern.matches(regExp, txtTotalBal.getAttribute("value")));
+		Assert.assertTrue("Value1 is valid $ value?",Pattern.matches(regExp, txtVal1.getAttribute("value")));
+		Assert.assertTrue("Value2 is valid $ value?",Pattern.matches(regExp, txtVal2.getAttribute("value")));
+		Assert.assertTrue("Value3 is valid $ value?",Pattern.matches(regExp, txtVal3.getAttribute("value")));
+		Assert.assertTrue("Value4 is valid $ value?",Pattern.matches(regExp, txtVal4.getAttribute("value")));
+		Assert.assertTrue("Value5 is valid $ value?",Pattern.matches(regExp, txtVal5.getAttribute("value")));
+		Assert.assertTrue("Total Balance is valid $ value?",Pattern.matches(regExp, txtTotalBal.getAttribute("value")));
+		
 	}
 	
 }
