@@ -57,7 +57,7 @@ public class HomePage extends TestBase {
 	@SuppressWarnings("deprecation")
 	public void navigateToHomePage() {
 		driver.get(prop.getProperty("url"));
-		Assert.assertTrue("ValuesExcersize", driver.getTitle()=="ValuesExcersize");
+		Assert.assertTrue("ValuesExcersize as title?", driver.getTitle()=="ValuesExcersize");
 	}
 	
 	@SuppressWarnings("deprecation")
@@ -72,10 +72,10 @@ public class HomePage extends TestBase {
 	@SuppressWarnings("deprecation")
 	public void verifyValuesGreaterThanZero() {
 		Assert.assertTrue("Value 1 field value is Greater Than zero?",Integer.parseInt(txtVal1.getAttribute("value").replace("$", ""))>0);
-		Assert.assertTrue("Value 1 field value is Greater Than zero?",Integer.parseInt(txtVal2.getAttribute("value").replace("$", ""))>0);
-		Assert.assertTrue("Value 1 field value is Greater Than zero?",Integer.parseInt(txtVal3.getAttribute("value").replace("$", ""))>0);
-		Assert.assertTrue("Value 1 field value is Greater Than zero?",Integer.parseInt(txtVal4.getAttribute("value").replace("$", ""))>0);
-		Assert.assertTrue("Value 1 field value is Greater Than zero?",Integer.parseInt(txtVal5.getAttribute("value").replace("$", ""))>0);
+		Assert.assertTrue("Value 2 field value is Greater Than zero?",Integer.parseInt(txtVal2.getAttribute("value").replace("$", ""))>0);
+		Assert.assertTrue("Value 3 field value is Greater Than zero?",Integer.parseInt(txtVal3.getAttribute("value").replace("$", ""))>0);
+		Assert.assertTrue("Value 4 field value is Greater Than zero?",Integer.parseInt(txtVal4.getAttribute("value").replace("$", ""))>0);
+		Assert.assertTrue("Value 5 field value is Greater Than zero?",Integer.parseInt(txtVal5.getAttribute("value").replace("$", ""))>0);
 	}
 	
 	@SuppressWarnings("deprecation")
